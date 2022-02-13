@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1440px;
+  font-family: 'Source Serif Pro', sans-serif;
+}
+
+ul {
+  min-width: 344px;
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+header.cabecalho {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 35px;
+}
+
+section.painel {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/painel.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section.painel p {
+  font-weight: 400;
+  font-size: 60px;
+  color: #fff;
+}
+
+section.quem-somos,
+section.onde-estamos {
+  width: 100%;
+  padding: 145px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .seccao-informacao {
+  width: 700px;
+  height: 400px;
+  text-align: center;
+}
+
+section .seccao-informacao img {
+  width: 170px;
+  height: 170px;
+  margin-bottom: 50px;
+}
+
+section .seccao-informacao h1 {
+  font-weight: 600;
+  font-size: 45px;
+  text-transform: uppercase;
+  margin-bottom: 37px;
+}
+
+section .seccao-informacao p {
+  font-weight: 300;
+  font-size: 18px;
+  padding: 8px;
+}
+
+section.ladrilho {
+  width: 100%;
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: 'image-4 image-4 image-2 image-3'
+                       'image-4 image-4 image-1 image-1';
+}
+
+section.ladrilho .image-maior {
+  background: url(../images/4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-area: image-4;
+}
+
+section.ladrilho .image-pequena-grao {
+  background: url(../images/2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-area: image-2;
+}
+
+section.ladrilho .image-pequena-cafe {
+  background: url(../images/3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-area: image-3;
+}
+
+section.ladrilho .image-media {
+  background: url(../images/1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-area: image-1;
+}
+
+
+section.contato {
+  width: 100%;
+  height: 600px;
+  background: url(../images/fundo-contato.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+section.contato .box-contato {
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  transform: translateY(-50%);
+}
+
+section.contato .box-contato h1 {
+  font-weight: 600;
+  font-size: 45px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+section.contato .box-contato p {
+  font-weight: 600;
+  font-size: 25px;
+  color: #fff;
+}
+
+footer.rodape {
+  background: url(../images/fundo-rodape.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+footer.rodape .cabecalho nav a {
+  color: #fff;
+}
+
+footer.rodape .informacoes-rodape {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 10px 35px;
+}
+
+footer.rodape .redes-sociais img  {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+}

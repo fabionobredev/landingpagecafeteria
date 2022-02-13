@@ -1,0 +1,76 @@
+@media(max-width: 740px) {
+  header.cabecalho {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header.cabecalho .logo {
+    margin-bottom: 50px;
+  }
+
+
+  header.cabecalho ul {
+    display: block;
+  }
+  
+  header.cabecalho ul li {
+    margin-bottom: 30px;
+  }
+
+  header.cabecalho ul li a {
+    width: 100%;
+    display: block;
+  }
+
+  section.painel {
+    height: 260px;
+  }
+
+  section.painel p {
+    font-size: 25px;
+  }
+
+  section .seccao-informacao h1 {
+    font-size: 30px;
+  }  
+
+  section.ladrilho {
+    grid-template-areas: 'image-4 image-4 image-4 image-4'
+                         'image-2 image-2 image-3 image-3'
+                         'image-1 image-1 image-1 image-1';
+  }
+
+  section.contato {
+    width: 100%;
+    height: 400px;
+    background: #D3AE71;
+  }
+  
+  section.contato .box-contato {
+    width: 100%;
+    left: 0;
+    text-align: center;
+  }
+
+  section.contato .box-contato p {
+    font-size: 18px;
+  }
+
+  footer.rodape {
+    background: #000;
+  }  
+  
+  footer.rodape .informacoes-rodape {
+    flex-direction: column;
+  } 
+  
+  footer.rodape .informacoes-rodape span  {
+    margin-bottom: 20px;
+  }
+
+  footer.rodape .redes-sociais img  {
+    margin-bottom: 20px;
+    order: 1;
+  }
+  
+}
